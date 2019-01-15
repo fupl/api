@@ -6,7 +6,7 @@ use App\Entity\Recipe;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @author @CountDucku
+ * @author CountDucku
  * @since  1.0.0
  */
 class RecipeTest extends TestCase

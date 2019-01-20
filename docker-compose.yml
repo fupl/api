@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+    db:
+        image: mysql:5.7
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: symfony
+            MYSQL_USER: symfony
+            MYSQL_PASSWORD: symfony
+
+    app:
+        build: .
+        ports:
+            - "8037:8000"
+        volumes:
+            - .:/app
+            - ~/.ssh:/root/.ssh
+
